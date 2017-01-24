@@ -22,7 +22,12 @@ public class SocialActivity extends AppCompatActivity
     GridLayoutManager LayoutManagaer;
 
     int[] listviewImage = new int[] {
-            R.drawable.facebook, R.drawable.instagram, R.drawable.twitter
+            R.drawable.facebook, R.drawable.instagram,
+            R.drawable.twitter, R.drawable.linkedin,
+            R.drawable.snapchat, R.drawable.whatsapp,
+            R.drawable.google_plus, R.drawable.youtube,
+            R.drawable.tumblr, R.drawable.pinterest,
+            R.drawable.reddit, R.drawable.skype
     };
 
     @Override

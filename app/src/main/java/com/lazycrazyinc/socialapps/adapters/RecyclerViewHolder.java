@@ -101,8 +101,154 @@ public class RecyclerViewHolder extends RecyclerView.Adapter<RecyclerViewHolder.
                         context.startActivity(intent);
                     }
                 }
+
+                if (position ==3)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.linkedin.android");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.linkedin.android"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==4)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.snapchat.android");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.snapchat.android"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==5)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.whatsapp"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==6)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.google.android.apps.plus");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.google.android.apps.plus"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==7)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.google.android.youtube");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.google.android.youtube"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==8)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.tumblr");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.tumblr"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==9)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.pinterest");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.pinterest"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==10)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.reddit.frontpage");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.reddit.frontpage"));
+                        context.startActivity(intent);
+                    }
+                }
+
+
+                if (position ==11)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.skype.raider");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.skype.raider"));
+                        context.startActivity(intent);
+                    }
+                }
             }
         });
+
     }
 
     @Override
