@@ -1,4 +1,4 @@
-package com.lazycrazyinc.socialapps.social;
+package com.lazycrazyinc.socialapps.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.lazycrazyinc.socialapps.social.Social_Activity;
 import com.lazycrazyinc.socialapps.R;
 
 import java.util.ArrayList;
@@ -63,7 +64,7 @@ public class Topics_Adapter extends RecyclerView.Adapter<Topics_Adapter.ViewHold
                 @Override
                 public void onClick(View view) {
 
-                    Intent i = new Intent(mContext, SocialActivity.class);
+                    Intent i = new Intent(mContext, Social_Activity.class);
                     //i.putExtra("sub_topic", position);
                     mContext.startActivity(i);
                 }
@@ -73,7 +74,8 @@ public class Topics_Adapter extends RecyclerView.Adapter<Topics_Adapter.ViewHold
     }
 
     @Override
-    public int getItemCount() {
+    public int getItemCount()
+    {
         return contents.size();
     }
 }

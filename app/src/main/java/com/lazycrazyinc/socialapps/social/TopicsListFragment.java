@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
 import com.lazycrazyinc.socialapps.R;
+import com.lazycrazyinc.socialapps.adapters.Topics_Adapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

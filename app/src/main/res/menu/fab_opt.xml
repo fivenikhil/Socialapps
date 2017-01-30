@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@mipmap/ic_grade_black_48dp"
+        android:title="Rate Us"/>
+    </group>
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@mipmap/ic_share_black_48dp"
+        android:title="Share"/>
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@mipmap/ic_feedback_black_48dp"
+        android:title="Feedback" />
+    </group>
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/ic_settings_black_48dp"
+        android:title="Settings" />
+    </group>
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@mipmap/ic_shop_black_48dp"
+            android:title="PlayStore" />
+    </group>
+
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@mipmap/ic_info_black_48dp"
+        android:title="About Us" />
+    </group>
+
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/ic_exit_to_app_black_48dp"
+            android:title="Exit" />
+    </group>
+</menu>

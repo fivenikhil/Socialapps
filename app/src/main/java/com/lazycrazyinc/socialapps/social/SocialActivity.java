@@ -27,7 +27,9 @@ public class SocialActivity extends AppCompatActivity
             R.drawable.snapchat, R.drawable.whatsapp,
             R.drawable.google_plus, R.drawable.youtube,
             R.drawable.tumblr, R.drawable.pinterest,
-            R.drawable.reddit, R.drawable.skype
+            R.drawable.reddit, R.drawable.skype,
+            R.drawable.quora, R.drawable.flickr,
+            R.drawable.foursquare
     };
 
     @Override
@@ -37,36 +39,15 @@ public class SocialActivity extends AppCompatActivity
         setContentView(R.layout.social_activity);
         ButterKnife.bind(this);
 
-        //ArrayList<int[]> stringList = new ArrayList<>(Arrays.asList(listviewImage));
-
-         LayoutManagaer = new GridLayoutManager(this, 2);
+        LayoutManagaer = new GridLayoutManager(this, 2);
         viewG.setLayoutManager(LayoutManagaer);
         viewG.setHasFixedSize(true);
         adapter = new RecyclerViewHolder(this,listviewImage);
         viewG.setAdapter(adapter);
 
-        /*fbButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
-                if (intent != null) {
-                    // We found the activity now start the activity
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                } else {
-                    // Bring user to the market or let them choose an app?
-                    intent = new Intent(Intent.ACTION_VIEW);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.setData(Uri.parse("market://details?id=" + "com.facebook.katana"));
-                    startActivity(intent);
-                }
-            }
-        });*/
-
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(viewG.getContext(),
+       /* DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(viewG.getContext(),
                 LayoutManagaer.getOrientation());
-        viewG.addItemDecoration(dividerItemDecoration);
+        viewG.addItemDecoration(dividerItemDecoration);*/
     }
 
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imFA"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="V 1.0.1"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="This app is developed by LazyCrazyTeam."
+        android:fontFamily="sans-serif-condensed"/>
+</LinearLayout>

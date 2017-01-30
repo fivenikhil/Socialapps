@@ -246,6 +246,54 @@ public class RecyclerViewHolder extends RecyclerView.Adapter<RecyclerViewHolder.
                         context.startActivity(intent);
                     }
                 }
+
+                if (position ==12)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.quora.android");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.quora.android"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==13)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.yahoo.mobile.client.android.flickr");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.yahoo.mobile.client.android.flickr"));
+                        context.startActivity(intent);
+                    }
+                }
+
+                if (position ==14)
+                {
+                    Intent intent = context.getPackageManager().getLaunchIntentForPackage("com.joelapenna.foursquared");
+                    if (intent != null) {
+                        // We found the activity now start the activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.joelapenna.foursquared"));
+                        context.startActivity(intent);
+                    }
+                }
             }
         });
 
